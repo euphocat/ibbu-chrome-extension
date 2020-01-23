@@ -1,0 +1,19 @@
+  {
+    "name": "Ibbü Chrome Extension",
+    "version": "1.0",
+    "description": "Ibbü on steroïds",
+    "manifest_version": 2,
+    "permissions": [
+      "activeTab",
+      "tabs"
+    ],
+    "icons": {
+    	"144": "android-icon-144x144.png"
+    },
+    "content_scripts": [
+	   {
+	     "matches": ["https://*.ibbu.com/*", "https://localhost/*"],
+	     "css" : ["showQuizz.css"]
+	   }
+	 ]
+  }
